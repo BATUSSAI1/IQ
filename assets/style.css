@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root{
+--Lightred: hsl(0, 100%, 67%);
+--Orangeyyellow: hsl(39, 100%, 56%);
+--Greenteal: hsl(166, 100%, 37%);
+--Cobaltblue: hsl(234, 85%, 45%);
+--Lightslatebluebackground1: hsl(252, 100%, 67%);
+--Lightroyalbluebackground2: hsl(241, 81%, 54%);
+--Violetbluecircle: hsla(256, 72%, 46%, 1);
+--Persianbluecircle: hsla(241, 72%, 46%, 0);
+--White: hsl(0, 0%, 100%);
+--Paleblue: hsl(221, 100%, 96%);
+--Lightlavender: hsl(241, 100%, 89%);
+--Darkgrayblue: hsl(224, 30%, 27%);
+--Lightred1: hsla(0, 100%, 67%, 20%);
+--Orangeyyellow1: hsla(39, 100%, 56%, 20%);
+--Greenteal1: hsla(166, 100%, 37%, 20%);
+--Cobaltblue1: hsla(234, 85%, 45%, 20%);
+}
+
+
+.padre{
+width: 100vw;
+height: 100vh;
+padding: 1rem;
+user-select: none;
+}
+
+.container{
+    background-color:var(--White);
+    display: flex;
+    gap: 1rem;
+    max-width: 1024px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;    
+    
+    
+}
+
+.imagen{
+    background: linear-gradient(var(--Lightslatebluebackground1), var(--Lightroyalbluebackground2));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 2rem;
+    width: 80%;
+    padding: 2rem;
+    height: 100%;
+}
+
+.number{
+    background: linear-gradient(var(--Violetbluecircle), var(--Persianbluecircle));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    
+}
+.number h3{
+    color: var(--White);
+    font-size: 50px;
+}
+
+.number h6{
+    font-size: 13px;
+    color: var(--Lightlavender);
+}
+
+.imagen h2{
+    color: var(--White);
+}
+.imagen p{
+    color: var(--Lightlavender);
+    width: 65%;
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info b:nth-child(1) {
+align-self: flex-start;
+padding-left: 3rem;
+}
+
+.reaction{
+    background-color: var(--Lightred1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1.2rem 1.2rem 0;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.reaction b{
+    color: var(--Lightred);
+    display: flex;
+    gap: 1rem;
+}
+
+.memory{
+    background-color: var(--Orangeyyellow1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1.2rem 1.2rem 0;
+    border-radius: 10px;
+    width: 80%;
+}
+.memory b{
+    color: var(--Orangeyyellow);
+    display: flex;
+    gap: 1rem;
+}
+
+.verbal{
+    background-color: var(--Greenteal1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 80%;
+    padding: 1.2rem 1.2rem 1.2rem 0;
+}
+
+.verbal b{
+    color: var(--Greenteal);
+    display: flex;
+    gap: 1rem;
+
+}
+
+.visual{
+    background-color: var(--Cobaltblue1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1.2rem 1.2rem 0;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.visual b{
+    color: var(--Cobaltblue);
+    display: flex;
+    gap: 1rem;
+
+}
+
+.continue {
+    background-color: var(--Darkgrayblue);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1.3rem;
+    border-radius: 40px;
+    color: var(--White);
+    width: 80%;
+    
+}
+
+@media(max-width:800px){
+
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .info b:nth-child(1) {
+        padding-left: 2rem;
+        }
+
+    .info, .imagen{
+        width: 100%;
+    }
+
+    .padre{
+        padding: 0;
+        height: 100%;
+    }
+
+    .visual, .memory, .verbal, .reaction{
+        width: 90%;
+    }
+
+    .imagen{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+
